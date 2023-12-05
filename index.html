@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World-clock-JB</title>
   </head>
   <body>
@@ -18,28 +19,28 @@
         <option value="">Hanoi</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="chicago">
         <div>
-          <h2>California</h2>
-          <div class="date">December 4th 2023</div>
+          <h2>Chicago</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">07:26:12 <small>AM</small></div>
+        <div class="time"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="stockholm">
         <div>
-          <h2>California</h2>
-          <div class="date">December 4th 2023</div>
+          <h2>Stockholm</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">07:26:12 <small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>
       This project was coded by <strong>Jessica Bravo</strong> and is open
       sourced on
-      <a href="https://github.com/Jessbpl/world-clock" target="_blank"
-        >GitHub</a
-      >
+      <a href="https://github.com/Jessbpl/world-clock" target="_blank">GitHub</a
+      >and hosted on
+      <a href="https://world-clockjb.netlify.app/">Netlify</a>
     </footer>
     <script src="javascript/index.js"></script>
   </body>
