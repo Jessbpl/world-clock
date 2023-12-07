@@ -1,6 +1,6 @@
 // create a function to update the time
 function updateTime() {
-  //california code
+  //chicago code
   let chicagoElement = document.querySelector("#chicago");
   if (chicagoElement) {
     let chicagoDateElement = chicagoElement.querySelector(" .date");
@@ -12,15 +12,28 @@ function updateTime() {
       "h:mm:ss[<small>]A[</small>]"
     );
   }
+
   //stockholm code
   let stockholmElement = document.querySelector("#stockholm");
-  if (chicagoElement) {
+  if (stockholmElement) {
     let stockholmDateElement = stockholmElement.querySelector(" .date");
     let stockholmTimeElement = stockholmElement.querySelector(".time");
     let stockholmTime = moment().tz("Europe/Stockholm");
 
     stockholmDateElement.innerHTML = stockholmTime.format("ddd, MMMM Do, YYYY");
     stockholmTimeElement.innerHTML = stockholmTime.format(
+      "h:mm:ss[<small>]A[</small>]"
+    );
+  }
+  //havana code
+  let havanaElement = document.querySelector("#havana");
+  if (havanaElement) {
+    let havanaDateElement = havanaElement.querySelector(" .date");
+    let havanaTimeElement = havanaElement.querySelector(".time");
+    let havanaTime = moment().tz("America/Havana");
+
+    havanaDateElement.innerHTML = havanaTime.format("ddd, MMMM Do, YYYY");
+    havanaTimeElement.innerHTML = havanaTime.format(
       "h:mm:ss[<small>]A[</small>]"
     );
   }
